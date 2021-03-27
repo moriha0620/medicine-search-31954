@@ -1,9 +1,443 @@
 <mxfile>
     <diagram id="Gzv2kLwkTkCzEBd7DmIo" name="Page-1">
-        <mxGraphModel dx="381" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="928" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="1" source="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="症状はどれ？" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="110" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="1.風邪、熱、頭痛&#10;2.胃腸、おしり（消化器）&#10;3.皮膚（かゆみ、虫刺されなど）&#10;4.目、耳、鼻、口&#10;5.関節、筋肉" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="3">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF6666;" edge="1" parent="1" source="6" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="110"/>
+                            <mxPoint x="630" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="140"/>
+                            <mxPoint x="610" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="570" y="170"/>
+                            <mxPoint x="570" y="490"/>
+                            <mxPoint x="660" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="1 風邪・熱・頭痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="1.風邪&#10;2.咳（せき）&#10;3.のどの痛み&#10;4.頭痛" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="1-1 風邪" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="12">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="1-2 咳（せき）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="170" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="18">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="1-3 のどの痛み" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="300" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="20">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="1-4 頭痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="440" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="22">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="LgqNQ4ynfgx50vkscO1B" name="Page-2">
+        <mxGraphModel dx="928" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="Vp8z2s2TwWY6D249ckP--0"/>
+                <mxCell id="Vp8z2s2TwWY6D249ckP--1" parent="Vp8z2s2TwWY6D249ckP--0"/>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-0" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="Vp8z2s2TwWY6D249ckP--1" source="vSOyqoJbkWxXGfj4OHgU-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-1" value="症状はどれ？" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="30" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="110" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-2" value="1.風邪、熱、頭痛&#10;2.胃腸、おしり（消化器）&#10;3.皮膚（かゆみ、虫刺されなど）&#10;4.目、耳、鼻、口&#10;5.関節、筋肉" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-1">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-3" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF6666;" edge="1" parent="Vp8z2s2TwWY6D249ckP--1" source="vSOyqoJbkWxXGfj4OHgU-7" target="vSOyqoJbkWxXGfj4OHgU-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-4" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="Vp8z2s2TwWY6D249ckP--1" source="vSOyqoJbkWxXGfj4OHgU-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="110"/>
+                            <mxPoint x="630" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-5" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="Vp8z2s2TwWY6D249ckP--1" source="vSOyqoJbkWxXGfj4OHgU-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="140"/>
+                            <mxPoint x="610" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-6" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="Vp8z2s2TwWY6D249ckP--1" source="vSOyqoJbkWxXGfj4OHgU-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="570" y="170"/>
+                            <mxPoint x="570" y="490"/>
+                            <mxPoint x="660" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-7" value="2. 胃腸・おしり（消化器）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="340" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-8" value="1.胃痛&#10;2.胃もたれ・胸やけ&#10;3.便秘&#10;4.下痢" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-7">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-9" value="2-1 胃痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="670" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-10" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-9">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-11" value="2-2 胃もたれ・胸やけ" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="670" y="170" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-12" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-11">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-13" value="2-3 便秘" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="670" y="300" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-14" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-13">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-15" value="2-4 下痢" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="Vp8z2s2TwWY6D249ckP--1">
+                    <mxGeometry x="670" y="440" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vSOyqoJbkWxXGfj4OHgU-16" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="vSOyqoJbkWxXGfj4OHgU-15">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="euCPihrkXu-NfS5ZUH8r" name="Page-3">
+        <mxGraphModel dx="928" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="lhCL6pgQ8ooDfuYsBGhZ-0"/>
+                <mxCell id="lhCL6pgQ8ooDfuYsBGhZ-1" parent="lhCL6pgQ8ooDfuYsBGhZ-0"/>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-0" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1" source="7kGk93PoxZv9EgTVncqi-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-1" value="症状はどれ？" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="30" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="110" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-2" value="1.風邪、熱、頭痛&#10;2.胃腸、おしり（消化器）&#10;3.皮膚（かゆみ、虫刺されなど）&#10;4.目、耳、鼻、口&#10;5.関節、筋肉" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-1">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-3" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF6666;" edge="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1" source="7kGk93PoxZv9EgTVncqi-7" target="7kGk93PoxZv9EgTVncqi-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-4" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1" source="7kGk93PoxZv9EgTVncqi-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="110"/>
+                            <mxPoint x="630" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-5" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1" source="7kGk93PoxZv9EgTVncqi-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="140"/>
+                            <mxPoint x="610" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-6" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1" source="7kGk93PoxZv9EgTVncqi-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="570" y="170"/>
+                            <mxPoint x="570" y="490"/>
+                            <mxPoint x="660" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-7" value="3 皮膚（かゆみ、虫刺されなど）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="340" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-8" value="1.湿疹・皮膚炎&#10;2.虫刺され&#10;3.水虫&#10;4.やけど" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-7">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-9" value="3-1 湿疹・皮膚炎" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="670" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-10" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-9">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-11" value="3-2 虫刺され" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="670" y="170" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-12" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-11">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-13" value="3-3 水虫" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="670" y="300" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-14" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-13">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-15" value="3-4 やけど" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="lhCL6pgQ8ooDfuYsBGhZ-1">
+                    <mxGeometry x="670" y="440" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7kGk93PoxZv9EgTVncqi-16" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="7kGk93PoxZv9EgTVncqi-15">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="PgJkm_tvYXFuMX2XEBMe" name="Page-4">
+        <mxGraphModel dx="928" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="q6ImTu0yenEBW1Swg4UN-0"/>
+                <mxCell id="q6ImTu0yenEBW1Swg4UN-1" parent="q6ImTu0yenEBW1Swg4UN-0"/>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-0" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="q6ImTu0yenEBW1Swg4UN-1" source="ZsKYvYVnWt2KGW1SmBxG-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-1" value="症状はどれ？" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="30" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="110" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-2" value="1.風邪、熱、頭痛&#10;2.胃腸、おしり（消化器）&#10;3.皮膚（かゆみ、虫刺されなど）&#10;4.目、耳、鼻、口&#10;5.関節、筋肉" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-1">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-3" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF6666;" edge="1" parent="q6ImTu0yenEBW1Swg4UN-1" source="ZsKYvYVnWt2KGW1SmBxG-7" target="ZsKYvYVnWt2KGW1SmBxG-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-4" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="q6ImTu0yenEBW1Swg4UN-1" source="ZsKYvYVnWt2KGW1SmBxG-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="110"/>
+                            <mxPoint x="630" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-5" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="q6ImTu0yenEBW1Swg4UN-1" source="ZsKYvYVnWt2KGW1SmBxG-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="140"/>
+                            <mxPoint x="610" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-6" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="q6ImTu0yenEBW1Swg4UN-1" source="ZsKYvYVnWt2KGW1SmBxG-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="570" y="170"/>
+                            <mxPoint x="570" y="490"/>
+                            <mxPoint x="660" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-7" value="4.目、耳、鼻、口" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="340" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-8" value="1.目のかゆみ&#10;2.鼻炎（花粉症）&#10;3.口内炎&#10;4.歯痛" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-7">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-9" value="4-1 目のかゆみ" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="670" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-10" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-9">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-11" value="4-2 鼻炎（花粉症）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="670" y="170" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-12" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-11">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-13" value="4-3 口内炎" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="670" y="300" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-14" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-13">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-15" value="4-4 歯痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="q6ImTu0yenEBW1Swg4UN-1">
+                    <mxGeometry x="670" y="440" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ZsKYvYVnWt2KGW1SmBxG-16" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="ZsKYvYVnWt2KGW1SmBxG-15">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="V5aGgu6GxD3mhraMChEp" name="Page-5">
+        <mxGraphModel dx="928" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="onKWfUvaag0FG0JMCsJP-0"/>
+                <mxCell id="onKWfUvaag0FG0JMCsJP-1" parent="onKWfUvaag0FG0JMCsJP-0"/>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-0" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="onKWfUvaag0FG0JMCsJP-1" source="TS1EHA3O7djHdXTng0qw-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-1" value="症状はどれ？" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="onKWfUvaag0FG0JMCsJP-1">
+                    <mxGeometry x="30" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="110" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-2" value="1.風邪、熱、頭痛&#10;2.胃腸、おしり（消化器）&#10;3.皮膚（かゆみ、虫刺されなど）&#10;4.目、耳、鼻、口&#10;5.関節、筋肉" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="TS1EHA3O7djHdXTng0qw-1">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-3" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FF6666;" edge="1" parent="onKWfUvaag0FG0JMCsJP-1" source="TS1EHA3O7djHdXTng0qw-7" target="TS1EHA3O7djHdXTng0qw-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-4" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="onKWfUvaag0FG0JMCsJP-1" source="TS1EHA3O7djHdXTng0qw-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="110"/>
+                            <mxPoint x="630" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-5" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fillColor=#FF6666;" edge="1" parent="onKWfUvaag0FG0JMCsJP-1" source="TS1EHA3O7djHdXTng0qw-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="140"/>
+                            <mxPoint x="610" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-7" value="5  関節・筋肉" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="onKWfUvaag0FG0JMCsJP-1">
+                    <mxGeometry x="340" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-8" value="1.肩こり・腰痛&#10;2.関節炎&#10;3.神経痛&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="TS1EHA3O7djHdXTng0qw-7">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-9" value="5-1 肩こり・腰痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="onKWfUvaag0FG0JMCsJP-1">
+                    <mxGeometry x="670" y="50" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-10" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="TS1EHA3O7djHdXTng0qw-9">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-11" value="5-2 関節炎" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="onKWfUvaag0FG0JMCsJP-1">
+                    <mxGeometry x="670" y="170" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-12" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="TS1EHA3O7djHdXTng0qw-11">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-13" value="5-3 神経痛" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="onKWfUvaag0FG0JMCsJP-1">
+                    <mxGeometry x="670" y="300" width="210" height="120" as="geometry">
+                        <mxRectangle x="10" y="40" width="60" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TS1EHA3O7djHdXTng0qw-14" value="1.新ルルゴールドEX&#10;2.エスタックイヴファインEX&#10;3.新コンタックかぜ総合&#10;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;fillColor=#2a2a2a;strokeColor=#f0f0f0;" vertex="1" parent="TS1EHA3O7djHdXTng0qw-13">
+                    <mxGeometry y="26" width="210" height="94" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

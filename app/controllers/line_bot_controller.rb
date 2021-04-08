@@ -588,7 +588,7 @@ class LineBotController < ApplicationController
                                                                         "imageAspectRatio": "rectangle",
                                                                         "imageSize": "contain",
                                                                         "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果",
+                                                                        "title": "検索結果：こちらがおすすめ",
                                                                         "text": "効能/効果：くしゃみ、鼻水\n用法/用量：１回１度ずつ、両鼻腔内に噴霧してください",
                                                                         "defaultAction": {
                                                                             "type": "uri",
@@ -615,7 +615,7 @@ class LineBotController < ApplicationController
                                                                         "imageAspectRatio": "rectangle",
                                                                         "imageSize": "cover",
                                                                         "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果",
+                                                                        "title": "検索結果：こちらがおすすめ",
                                                                         "text": "効能/効果：口内炎、舌炎\n用法/用量：１日２〜４回、患部を清浄後、塗ってください",
                                                                         "defaultAction": {
                                                                             "type": "uri",
@@ -642,7 +642,7 @@ class LineBotController < ApplicationController
                                                                         "imageAspectRatio": "rectangle",
                                                                         "imageSize": "cover",
                                                                         "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果",
+                                                                        "title": "検索結果：こちらがおすすめ",
                                                                         "text": "効能/効果：歯痛・抜歯後の疼痛\n用法/用量：１回１錠、１日２回まで",
                                                                         "defaultAction": {
                                                                             "type": "uri",

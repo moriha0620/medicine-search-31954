@@ -18,7 +18,7 @@ class LineBotController < ApplicationController
           if text_params == "からだ" then
                 message = {
                             "type": "template",
-                            "altText": "症状を調べています",
+                            "altText": "症状を調べている",
                             "template": {
                                 "type": "buttons",
                                 "thumbnailImageUrl": "https://3.bp.blogspot.com/-K-NrT9IVLT0/Wn1aAyKa-TI/AAAAAAABKRY/HScNXHJaf0EbKmHxL-_BQ_YbRI53tDxHACLcBGAs/s800/mask_animal_inu.png",

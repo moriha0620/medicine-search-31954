@@ -40,8 +40,8 @@ class LineBotController < ApplicationController
                                     },
                                     {
                                       "type": "message",
-                                      "label": "胃腸・おしり（消化器）",
-                                      "text": "胃腸・おしり（消化器）"
+                                      "label": "胃腸・おなか（消化器）",
+                                      "text": "胃腸・おなか（消化器）"
                                     },
                                     {
                                       "type": "message",
@@ -208,7 +208,7 @@ class LineBotController < ApplicationController
                                             }
                                             client.reply_message(event['replyToken'], message)
 
-                        elsif text_params == "胃腸・おしり（消化器）" then
+                        elsif text_params == "胃腸・おなか（消化器）" then
                           message = {
                                   "type": "template",
                                   "altText": "症状を調べています",
@@ -429,86 +429,187 @@ class LineBotController < ApplicationController
                                                         client.reply_message(event['replyToken'], message)
                                               elsif text_params == "敏感肌・乾燥肌" then
                                                 message = {
-                                                          "type": "template",
-                                                          "altText": "検索結果を表示",
-                                                          "template": {
-                                                              "type": "buttons",
-                                                              "thumbnailImageUrl": "https://tshop.r10s.jp/rakuten24/cabinet/105/4987074300105.jpg?downsize=500:*",
-                                                              "imageAspectRatio": "rectangle",
-                                                              "imageSize": "cover",
-                                                              "imageBackgroundColor": "#FFFFFF",
-                                                              "title": "検索結果：こちらがおすすめ",
-                                                              "text": "効能/効果：乾燥肌、手指の荒れ\n用法/用量：１日数回、適量を患部に塗ってください",
-                                                              "defaultAction": {
-                                                                  "type": "uri",
-                                                                  "label": "View detail",
-                                                                  "uri": "https://tshop.r10s.jp/rakuten24/cabinet/105/4987074300105.jpg?downsize=500:*"
-                                                              },
-                                                              "actions": [
-                                                                  {
+                                                  "type": "template",
+                                                  "altText": "検索結果を表示",
+                                                  "template": {
+                                                      "type": "carousel",
+                                                      "columns": [
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/5845/00000008273924_a01.jpg",
+                                                            "imageBackgroundColor": "#FFFFFF",
+                                                            "title": "検索結果：おすすめ①ぬり薬",
+                                                            "text": "効能/効果：乾燥肌、手指の荒れ\nしっとりが続くクリームタイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/5845/00000008273924_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
                                                                     "type": "uri",
                                                                     "label": "楽天市場で購入する",
-                                                                    "uri": "https://item.rakuten.co.jp/rakuten24/e259359h/"
-                                                                  }
-                                                              ]
-                                                            }
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987286317175/"
+                                                                }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/5845/00000008273923_a01.jpg",
+                                                            "imageBackgroundColor": "#000000",
+                                                            "title": "検索結果：おすすめ②ぬり薬",
+                                                            "text": "効能/効果：乾燥肌、手指の荒れ\nさらっとしたローションタイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/5845/00000008273923_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "uri",
+                                                                    "label": "楽天市場で購入する",
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987286317168/"
+                                                                }
+                                                            ]
                                                           }
-                                                          client.reply_message(event['replyToken'], message)
+                                                      ],
+                                                      "imageAspectRatio": "rectangle",
+                                                      "imageSize": "contain"
+                                                  }
+                                                }
+                                                client.reply_message(event['replyToken'], message)
                                               elsif text_params == "虫刺され" then
                                                 message = {
-                                                          "type": "template",
-                                                          "altText": "検索結果を表示",
-                                                          "template": {
-                                                              "type": "buttons",
-                                                              "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072479_a01.jpg",
-                                                              "imageAspectRatio": "rectangle",
-                                                              "imageSize": "cover",
-                                                              "imageBackgroundColor": "#FFFFFF",
-                                                              "title": "検索結果：こちらがおすすめ",
-                                                              "text": "効能/効果：虫刺され、かゆみ\n用法/用量：１日数回、適量を患部に塗ってください",
-                                                              "defaultAction": {
-                                                                  "type": "uri",
-                                                                  "label": "View detail",
-                                                                  "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072479_a01.jpg"
-                                                              },
-                                                              "actions": [
-                                                                  {
+                                                  "type": "template",
+                                                  "altText": "検索結果を表示",
+                                                  "template": {
+                                                      "type": "carousel",
+                                                      "columns": [
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072479_a01.jpg",
+                                                            "imageBackgroundColor": "#FFFFFF",
+                                                            "title": "検索結果：おすすめ①ぬり薬",
+                                                            "text": "効能/効果：虫刺され、かゆみ\n使用感のいいクリームタイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072479_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
                                                                     "type": "uri",
                                                                     "label": "楽天市場で購入する",
                                                                     "uri": "https://biccamera.rakuten.co.jp/item/4987426002138/"
-                                                                  }
-                                                              ]
-                                                            }
-                                                          }
-                                                          client.reply_message(event['replyToken'], message)
-                                              elsif text_params == "水虫" then
-                                                message = {
-                                                          "type": "template",
-                                                          "altText": "検索結果を表示",
-                                                          "template": {
-                                                              "type": "buttons",
-                                                              "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/0742/00000001793654_a01.jpg",
-                                                              "imageAspectRatio": "rectangle",
-                                                              "imageSize": "cover",
-                                                              "imageBackgroundColor": "#FFFFFF",
-                                                              "title": "検索結果：こちらがおすすめ",
-                                                              "text": "効能/効果：水虫、いんきんたむし、ほか\n用法/用量：１日１回、適量を患部に塗ってください",
-                                                              "defaultAction": {
-                                                                  "type": "uri",
-                                                                  "label": "View detail",
-                                                                  "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/0742/00000001793654_a01.jpg"
-                                                              },
-                                                              "actions": [
-                                                                  {
+                                                                }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072480_a01.jpg",
+                                                            "imageBackgroundColor": "#000000",
+                                                            "title": "検索結果：おすすめ②ぬり薬",
+                                                            "text": "効能/効果：虫刺され、かゆみ\nスーっと清涼感がある液体タイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1214/00000002072480_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
                                                                     "type": "uri",
                                                                     "label": "楽天市場で購入する",
-                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987107612212/"
-                                                                  }
-                                                              ]
-                                                            }
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987426002084/"
+                                                                }
+                                                            ]
                                                           }
-                                                          client.reply_message(event['replyToken'], message)
-                        
+                                                      ],
+                                                      "imageAspectRatio": "rectangle",
+                                                      "imageSize": "contain"
+                                                  }
+                                                }
+                                                client.reply_message(event['replyToken'], message)
+                                              elsif text_params == "水虫" then
+                                                message = {
+                                                  "type": "template",
+                                                  "altText": "検索結果を表示",
+                                                  "template": {
+                                                      "type": "carousel",
+                                                      "columns": [
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/0270/00000001515813_a01.jpg",
+                                                            "imageBackgroundColor": "#FFFFFF",
+                                                            "title": "検索結果：おすすめ①ぬり薬",
+                                                            "text": "効能/効果：水虫、たむし\nさまざまな症状にぬりやすいクリームタイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/0270/00000001515813_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "uri",
+                                                                    "label": "楽天市場で購入する",
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987107612236/"
+                                                                }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/0900/00000001886508_a01.jpg",
+                                                            "imageBackgroundColor": "#000000",
+                                                            "title": "検索結果：おすすめ②ぬり薬",
+                                                            "text": "効能/効果：水虫、たむし\nカサカサ幹部にもしっかり浸透する液体タイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/0900/00000001886508_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "uri",
+                                                                    "label": "楽天市場で購入する",
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987306035126/"
+                                                                }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1949/00000003032334_a01.jpg",
+                                                            "imageBackgroundColor": "#000000",
+                                                            "title": "検索結果：おすすめ③ぬり薬",
+                                                            "text": "効能/効果：水虫、たむし\n清涼感のあるぬり心地とジェルが乾いてパウダー状に密着",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1949/00000003032334_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "uri",
+                                                                    "label": "楽天市場で購入する",
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987072034897/"
+                                                                }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1449/00000003032366_a01.jpg",
+                                                            "imageBackgroundColor": "#000000",
+                                                            "title": "検索結果：おすすめ④スプレー薬",
+                                                            "text": "効能/効果：水虫、たむし\nパウダーがジュクジュクした患部をサラサラに乾かすスプレータイプ",
+                                                            "defaultAction": {
+                                                                "type": "uri",
+                                                                "label": "View detail",
+                                                                "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1449/00000003032366_a01.jpg"
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "uri",
+                                                                    "label": "楽天市場で購入する",
+                                                                    "uri": "https://biccamera.rakuten.co.jp/item/4987072079669/"
+                                                                }
+                                                            ]
+                                                          }
+                                                      ],
+                                                      "imageAspectRatio": "rectangle",
+                                                      "imageSize": "contain"
+                                                  }
+                                                }
+                                                client.reply_message(event['replyToken'], message)
                         elsif text_params == "目・耳・鼻・口" then
                           message = {
                                   "type": "template",
@@ -529,13 +630,13 @@ class LineBotController < ApplicationController
                                                                 "actions": [
                                                                     {
                                                                       "type": "message",
-                                                                      "label": "目のかゆみ",
-                                                                      "text": "目のかゆみ"
+                                                                      "label": "目のかゆみ・充血",
+                                                                      "text": "目のかゆみ・充血"
                                                                     },
                                                                     {
                                                                       "type": "message",
-                                                                      "label": "鼻炎（花粉症）",
-                                                                      "text": "鼻炎（花粉症）"
+                                                                      "label": "くしゃみ・鼻水（花粉症）",
+                                                                      "text": "くしゃみ・鼻水（花粉症）"
                                                                     },
                                                                     {
                                                                       "type": "message",
@@ -551,87 +652,243 @@ class LineBotController < ApplicationController
                                                             }
                                                           }
                                                           client.reply_message(event['replyToken'], message)
-                                                        elsif text_params == "目のかゆみ" then
+                                                        elsif text_params == "目のかゆみ・充血" then
                                                           message = {
-                                                                    "type": "template",
-                                                                    "altText": "検索結果を表示",
-                                                                    "template": {
-                                                                        "type": "buttons",
-                                                                        "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032653_a01.jpg",
-                                                                        "imageAspectRatio": "rectangle",
-                                                                        "imageSize": "cover",
-                                                                        "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果：こちらがおすすめ",
-                                                                        "text": "効能/効果：目のかゆみ、充血\n用法/用量：１回１～２滴、１日４～６回点眼してください",
-                                                                        "defaultAction": {
-                                                                            "type": "uri",
-                                                                            "label": "View detail",
-                                                                            "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032653_a01.jpg"
-                                                                        },
-                                                                        "actions": [
-                                                                            {
+                                                            "type": "template",
+                                                            "altText": "検索結果を表示",
+                                                            "template": {
+                                                                "type": "carousel",
+                                                                "columns": [
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032653_a01.jpg",
+                                                                      "imageBackgroundColor": "#FFFFFF",
+                                                                      "title": "検索結果：おすすめ①目薬",
+                                                                      "text": "効能/効果：目のかゆみ、充血\n心地よさ：しみないソフトタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032653_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
                                                                               "type": "uri",
                                                                               "label": "楽天市場で購入する",
                                                                               "uri": "https://biccamera.rakuten.co.jp/item/4987107615619/"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                  }
-                                                                  client.reply_message(event['replyToken'], message)
-                                                        elsif text_params == "鼻炎（花粉症）" then
-                                                          message = {
-                                                                    "type": "template",
-                                                                    "altText": "検索結果を表示",
-                                                                    "template": {
-                                                                        "type": "buttons",
-                                                                        "thumbnailImageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/tsuruha/cabinet/shouhin30/4987107615640.jpg?_ex=200x200&s=0&r=1",
-                                                                        "imageAspectRatio": "rectangle",
-                                                                        "imageSize": "contain",
-                                                                        "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果：こちらがおすすめ",
-                                                                        "text": "効能/効果：くしゃみ、鼻水\n用法/用量：１回１度ずつ、両鼻腔内に噴霧してください",
-                                                                        "defaultAction": {
-                                                                            "type": "uri",
-                                                                            "label": "View detail",
-                                                                            "uri": "https://thumbnail.image.rakuten.co.jp/@0_mall/tsuruha/cabinet/shouhin30/4987107615640.jpg?_ex=200x200&s=0&r=1"
-                                                                        },
-                                                                        "actions": [
-                                                                            {
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032648_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ②目薬",
+                                                                      "text": "効能/効果：目のかゆみ、充血\n心地よさ：すっきりクールタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032648_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
                                                                               "type": "uri",
                                                                               "label": "楽天市場で購入する",
-                                                                              "uri": "https://item.rakuten.co.jp/tsuruha/10087545/"
-                                                                            }
-                                                                        ]
-                                                                      }
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107615626/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032652_a01.jpg",
+                                                                      "imageBackgroundColor": "#FFFFFF",
+                                                                      "title": "検索結果：おすすめ③目薬",
+                                                                      "text": "効能/効果：目のかゆみ、充血\n心地よさ：しっかりうるおうモイストタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032652_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107615633/"
+                                                                          }
+                                                                      ]
                                                                     }
-                                                                    client.reply_message(event['replyToken'], message)
+                                                                ],
+                                                                "imageAspectRatio": "rectangle",
+                                                                "imageSize": "contain"
+                                                            }
+                                                          }
+                                                          client.reply_message(event['replyToken'], message)
+                                                        elsif text_params == "くしゃみ・鼻水（花粉症）" then
+                                                          message = {
+                                                            "type": "template",
+                                                            "altText": "検索結果を表示",
+                                                            "template": {
+                                                                "type": "carousel",
+                                                                "columns": [
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://shop.r10s.jp/koto-p/cabinet/itempic6/a4987107611000.jpg",
+                                                                      "imageBackgroundColor": "#FFFFFF",
+                                                                      "title": "検索結果：おすすめ①のみ薬",
+                                                                      "text": "効能/効果：鼻水、鼻づまり\n朝・夜1日2回のカプセル剤",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://shop.r10s.jp/koto-p/cabinet/itempic6/a4987107611000.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://item.rakuten.co.jp/koto-p/a4987107611000/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032651_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ②点鼻薬",
+                                                                      "text": "効能/効果：鼻水、鼻づまり\nさっぱりソフトタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032651_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107615640/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032647_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ③点鼻薬",
+                                                                      "text": "効能/効果：鼻水、鼻づまり\nすっきりクールタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032647_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107615664/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032649_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ④点鼻薬",
+                                                                      "text": "効能/効果：鼻水、鼻づまり\n患部に留まるモイストタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1450/00000003032649_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107615688/"
+                                                                          }
+                                                                      ]
+                                                                    }
+                                                                ],
+                                                                "imageAspectRatio": "rectangle",
+                                                                "imageSize": "contain"
+                                                            }
+                                                          }
+                                                          client.reply_message(event['replyToken'], message)
                                                         elsif text_params == "口内炎" then
                                                           message = {
-                                                                    "type": "template",
-                                                                    "altText": "検索結果を表示",
-                                                                    "template": {
-                                                                        "type": "buttons",
-                                                                        "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/1453/00000003035374_a01.jpg",
-                                                                        "imageAspectRatio": "rectangle",
-                                                                        "imageSize": "cover",
-                                                                        "imageBackgroundColor": "#FFFFFF",
-                                                                        "title": "検索結果：こちらがおすすめ",
-                                                                        "text": "効能/効果：口内炎、舌炎\n用法/用量：１日２〜４回、患部を清浄後、塗ってください",
-                                                                        "defaultAction": {
-                                                                            "type": "uri",
-                                                                            "label": "View detail",
-                                                                            "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/1453/00000003035374_a01.jpg"
-                                                                        },
-                                                                        "actions": [
-                                                                            {
+                                                            "type": "template",
+                                                            "altText": "検索結果を表示",
+                                                            "template": {
+                                                                "type": "carousel",
+                                                                "columns": [
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://thumbnail.image.rakuten.co.jp/@0_mall/ehac/cabinet/iyaku002/4987107607409.jpg?_ex=200x200&s=0&r=1",
+                                                                      "imageBackgroundColor": "#FFFFFF",
+                                                                      "title": "検索結果：おすすめ①のみ薬",
+                                                                      "text": "効能/効果：口内炎、のどの痛み\n1日3回の飲んでなおす錠剤",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://thumbnail.image.rakuten.co.jp/@0_mall/ehac/cabinet/iyaku002/4987107607409.jpg?_ex=200x200&s=0&r=1"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
                                                                               "type": "uri",
                                                                               "label": "楽天市場で購入する",
-                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107614001/"
-                                                                            }
-                                                                        ]
-                                                                      }
+                                                                              "uri": "https://item.rakuten.co.jp/ehac/4987107607409/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/2399/00000003465446_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ②ぬり薬",
+                                                                      "text": "効能/効果：口内炎\n患部にしっかりとどまって効くぬり薬",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/2399/00000003465446_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107619501/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/4734/00000007188238_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ③はり薬",
+                                                                      "text": "効能/効果：口内炎\n幹部に貼って、口の中で溶けるフィルムタイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/4734/00000007188238_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107626769/"
+                                                                          }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "thumbnailImageUrl": "https://image.rakuten.co.jp/biccamera/cabinet/product/0890/00000001882268_a01.jpg",
+                                                                      "imageBackgroundColor": "#000000",
+                                                                      "title": "検索結果：おすすめ④スプレー薬",
+                                                                      "text": "効能/効果：口内炎\nさっぱりした味のスプレータイプ",
+                                                                      "defaultAction": {
+                                                                          "type": "uri",
+                                                                          "label": "View detail",
+                                                                          "uri": "https://image.rakuten.co.jp/biccamera/cabinet/product/0890/00000001882268_a01.jpg"
+                                                                      },
+                                                                      "actions": [
+                                                                          {
+                                                                              "type": "uri",
+                                                                              "label": "楽天市場で購入する",
+                                                                              "uri": "https://biccamera.rakuten.co.jp/item/4987107611116/"
+                                                                          }
+                                                                      ]
                                                                     }
-                                                                    client.reply_message(event['replyToken'], message)
+                                                                ],
+                                                                "imageAspectRatio": "rectangle",
+                                                                "imageSize": "contain"
+                                                            }
+                                                          }
+                                                          client.reply_message(event['replyToken'], message)
                                                         elsif text_params == "歯が痛い" then
                                                           message = {
                                                                     "type": "template",
